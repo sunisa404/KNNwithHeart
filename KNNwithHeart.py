@@ -6,8 +6,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # st.header('sunisa') 
-st.title('การทำนายโรคหัวใจ Machine Learning')
-st.image("./img/healty.png")
+st.title('การทำนายโรคหัวใจด้วย Machine Learning')
+st.image("./img/HeartWithMachineLearning.jpg")
 
 col1, col2 = st.columns(2)
 
@@ -59,7 +59,7 @@ else:
 
 html_7 = """
 <div style="background-color:#c5f18a;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h5>ข้อมูล iris หรือข้อมูลดอกไม้สำหรับทำนาย</h5></center>
+<center><h5> Dataset สำหรับทำนาย</h5></center>
 </div>
 """
 st.markdown(html_7, unsafe_allow_html=True)
@@ -81,14 +81,14 @@ st.subheader("📌 เลือกฟีเจอร์เพื่อดูก�
 feature = st.selectbox("เลือกฟีเจอร์", dt.columns[:-1])
 
 # วาดกราฟ boxplot
-st.write(f"### 🎯 Boxplot: {feature} แยกตามชนิดของดอกไม้")
+st.write(f"### 🎯 Boxplot: {feature} การจำแนก")
 fig, ax = plt.subplots()
 sns.boxplot(data=dt, x='HeartDisease', y=feature, ax=ax)
 st.pyplot(fig)
 
 # วาด pairplot
 if st.checkbox("แสดง Pairplot (ใช้เวลาประมวลผลเล็กน้อย)"):
-    st.write("### 🌺 Pairplot: การกระจายของข้อมูลทั้งหมด")
+    st.write("### Pairplot: การกระจายของข้อมูลทั้งหมด")
     fig2 = sns.pairplot(dt, hue='HeartDisease')
     st.pyplot(fig2)
 
