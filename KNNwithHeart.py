@@ -122,7 +122,7 @@ if st.button("ทำนายผล"):
    Knn_model.fit(X, y)  
     
    x_input = np.array([[A1, A2,A3, A4,A5, A6,A7, A8,A9, A10,A11]])
-   st.write(Knn_model.predict(x_input))
+   #st.write(Knn_model.predict(x_input))
    
    out=Knn_model.predict(x_input)
 
