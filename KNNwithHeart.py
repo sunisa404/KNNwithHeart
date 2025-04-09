@@ -7,17 +7,17 @@ import matplotlib.pyplot as plt
 
 # st.header('sunisa') 
 st.title('การจำแนกขอมูลด้วย Machine Learning')
-st.image("./img/1.jpg")
+st.image("./img/healty.png")
 
 col1, col2 = st.columns(2)
 
 with col1:
    st.header("กิตติ")
-   st.image("./img/2.jpg")
+   st.image("./img/healty.png")
 
 with col2:
    st.header("การทำนายโรคหัวใจ")
-   st.image("./img/3.jpg")
+   st.image("./img/yousick.jpg")
 
 html_7 = """
 <div style="background-color:#c5f18a;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
