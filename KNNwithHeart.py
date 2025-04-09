@@ -6,18 +6,18 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # st.header('sunisa') 
-st.title('การจำแนกขอมูลด้วย Machine Learning')
+st.title('การทำนายโรคหัวใจ Machine Learning')
 st.image("./img/healty.png")
 
 col1, col2 = st.columns(2)
 
 with col1:
-   st.header("กิตติ")
-   st.image("./img/healty.png")
+   st.header("เป็นโรคหัวใจ")
+   st.image("./img/yousick.jpg")
 
 with col2:
-   st.header("การทำนายโรคหัวใจ")
-   st.image("./img/yousick.jpg")
+   st.header("ไม่เป็นโรคหัวใจ")
+   st.image("./img/healty.png")
 
 html_7 = """
 <div style="background-color:#c5f18a;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
