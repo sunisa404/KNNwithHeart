@@ -128,9 +128,9 @@ if st.button("ทำนายผล"):
 
    if out[0] == 1:
     st.write("คุณมีโอกาสเป็นโรคหัวใจค่ะ")
-    #st.image("./img/yousick.jpg")
+    st.image("./img/yousick.jpg")
    else:
     st.write("คุณไม่มีโอกาสเป็นโรคหัวใจค่ะ")      
-    #st.image("./img/healty.png")
+    st.image("./img/healty.png")
 else:
     st.write("ไม่ทำนาย")
